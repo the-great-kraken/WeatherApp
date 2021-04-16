@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="title_home">Weather</string>
+    <string name="title_notifications">My places</string>
+
+    <string name="action_search">Search Weather by City Name</string>
+    <string name="search_title"> Enter city name </string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="wind_lable">Wind:</string>
+    <string name="wind_unit">m/s</string>
+    <string name="pressure_lable">Pressure:</string>
+    <string name="pressure_unit">hPa</string>
+    <string name="humidity_lable">Humidity:</string>
+    <string name="humidity_unit">%</string>
+    <string name="description">Description</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:id="@+id/fragment_placelist"
+    tools:context=".places.PlacelistFragment">
+
+    <LinearLayout
+        android:id="@+id/title_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="top"
+        android:background="@color/tittle_color"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:minHeight="64dp"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginLeft="36dp"
+            android:gravity="center_vertical"
+            android:text="My places" />
+
+        <ImageView
+            android:id="@+id/search_button_pl"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/loupe"/>
+    </LinearLayout>
+
+    <include layout="@layout/content_city" app:layout_constraintTop_toBottomOf="@+id/title_place"/>
+
+</LinearLayout>
